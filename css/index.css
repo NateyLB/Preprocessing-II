@@ -349,6 +349,12 @@ nav .links {
   align-items: center;
   font-size: 2rem;
 }
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: #32ceb4;
+  text-transform: lowercase;
+  border: 2px dashed #C0C0C0;
+}
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
     width: 100%;
