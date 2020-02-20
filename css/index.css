@@ -89,7 +89,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid gray;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -243,20 +242,56 @@ nav .links {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -270,6 +305,11 @@ nav .links {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -279,15 +319,29 @@ nav .links {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 85%;
+  }
 }
 .home .content-pick .destination .btn {
   height: 6vh;
   width: 85%;
   border-radius: 15px;
-  background-color: #357469;
+  background-color: #32ceb4;
   color: white;
   display: flex;
   flex-direction: row;
@@ -295,22 +349,21 @@ nav .links {
   align-items: center;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+  }
+}
 header {
-  height: 65vh;
+  height: 55vh;
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
-header .header-image {
-  background-image: url('../img/fun-bus.jpg');
-  width: 100%;
-  height: 42vh;
-}
-header h2 {
-  padding-top: 2%;
-}
-header p {
-  padding-bottom: 3%;
+@media (max-width: 500px) {
+  header {
+    height: 46vh;
+  }
 }
