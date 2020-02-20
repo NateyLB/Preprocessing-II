@@ -1,15 +1,31 @@
 // Navigation Styles here
 
 nav{
+    .flexDisplay(row, space-between, center );
+
+    @media @mobile{
+        .flexDisplay(column, space-between, center );
+    }
     h1{
         height:12.5vh;
         .flexDisplay(row, center, center );
+
+        @media @mobile{
+            height: 7vh;
+            .flexDisplay(row, center, flex-start );
+        }
     }
-    .flexDisplay(row, space-between, center );
 
     .links{
         width: 45%;
         .flexDisplay(row, space-around, center );
+        
+        @media @mobile{
+            height: 5vh;
+            width: 100%;
+            .flexDisplay(row, space-evenly, center );
+        }
+
     }
 }
 
