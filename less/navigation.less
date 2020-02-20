@@ -1,15 +1,19 @@
 // Navigation Styles here
 
 nav{
+    h1{
+        height:12.5vh;
+        .flexDisplay(row, center, center );
+    }
     .flexDisplay(row, space-between, center );
 
     .links{
         width: 45%;
         .flexDisplay(row, space-around, center );
-
-        a{
-            text-decoration:none;
-            color:black;
-        }
     }
+}
+
+.border{
+    width: 100%;
+    border-top: 2px dashed @navigation-border;
 }
