@@ -56,6 +56,31 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .button(6vh, 85%, 15px, rgb(53, 116, 105), white);
+        .flexDisplay(row, center, center);
+        font-size: 2rem;
+      }
     }
   }
 }// home
+
+//header
+header{
+  height: 65vh;
+  border-bottom: 2px dashed @navigation-border;
+  .flexDisplay(column, space-between, flex-start );
+  .header-image{
+    background-image: url('../img/fun-bus.jpg');
+    width: 100%;
+    height: 42vh;
+  }
+  h2{
+    padding-top: 2%;
+  }
+
+  p{
+    padding-bottom: 3%;
+  }
+}
