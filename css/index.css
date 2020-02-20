@@ -188,6 +188,11 @@ nav {
     align-items: center;
   }
 }
+@media (max-width: 220px) {
+  nav {
+    height: 15vh;
+  }
+}
 nav h1 {
   height: 12.5vh;
   display: flex;
@@ -218,6 +223,14 @@ nav .links {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media (max-width: 220px) {
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
   }
 }
@@ -371,5 +384,50 @@ header {
 @media (max-width: 500px) {
   header {
     height: 46vh;
+  }
+}
+@media (max-width: 291px) {
+  header {
+    height: 50vh;
+  }
+}
+@media (max-width: 263px) {
+  header {
+    height: 53vh;
+  }
+}
+@media (max-width: 244px) {
+  header {
+    height: 55vh;
+  }
+}
+@media (max-width: 210px) {
+  header {
+    height: 57vh;
+  }
+}
+@media (max-width: 203px) {
+  header {
+    height: 60vh;
+  }
+}
+@media (max-width: 181px) {
+  header {
+    height: 63vh;
+  }
+}
+@media (max-width: 171px) {
+  header {
+    height: 69vh;
+  }
+}
+@media (max-width: 159px) {
+  header {
+    height: 73vh;
+  }
+}
+@media (max-width: 152px) {
+  header {
+    height: 76vh;
   }
 }

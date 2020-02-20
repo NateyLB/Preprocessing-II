@@ -6,6 +6,12 @@ nav{
     @media @mobile{
         .flexDisplay(column, space-between, center );
     }
+
+    @media (max-width:220px){
+        height: 15vh;
+    }
+
+
     h1{
         height:12.5vh;
         .flexDisplay(row, center, center );
@@ -24,6 +30,10 @@ nav{
             height: 5vh;
             width: 100%;
             .flexDisplay(row, space-evenly, center );
+        }
+
+        @media (max-width:220px){
+            .flexDisplay(column, flex-end, center );
         }
 
     }
