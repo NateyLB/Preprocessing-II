@@ -367,6 +367,7 @@ nav .links {
   color: #32ceb4;
   text-transform: lowercase;
   border: 2px dashed #C0C0C0;
+  font-family: 'Indie Flower', cursive;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
