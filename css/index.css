@@ -234,6 +234,10 @@ nav .links {
     align-items: center;
   }
 }
+nav .links a:hover {
+  font-family: 'Indie Flower', cursive;
+  color: #32ceb4;
+}
 .border {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
