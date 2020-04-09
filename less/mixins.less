@@ -1,1 +1,26 @@
 // Mixins in here
+
+.flexDisplay(@direction, @justify, @align){
+    display:flex;
+    flex-direction:@direction;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.button(@height, @width, @radius, @background-color, @font-color){
+    height:@height;
+    width:@width;
+    border-radius:@radius;
+    background-color:@background-color;
+    color:@font-color;
+}
+
+.hover(@background-color, @font-color, @text-transform){
+    &:hover{
+        background-color:@background-color;
+        color: @font-color;
+        text-transform:@text-transform;
+        border: 2px dashed @navigation-border;
+        font-family: 'Indie Flower', cursive;
+    }
+}

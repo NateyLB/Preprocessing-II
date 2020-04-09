@@ -6,19 +6,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      .flexDisplay(column, space-evenly, center);
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width:100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width:100%;
+        .flexDisplay(column, center, center);
+        padding: 0%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile{
+          width:100%;
+          
+        }
       }
     }
   }
@@ -26,6 +45,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      .flexDisplay(column-reverse, center, center )
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +65,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width:100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +80,79 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      width: 100%;
+      .flexDisplay(column, center, center);
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 85%;
+      }
+
+      .btn{
+        .button(6vh, 85%, 15px, rgb(50, 206, 180), white);
+        .flexDisplay(row, center, center);
+        font-size: 2rem;
+
+        .hover(white, rgb(50, 206, 180), lowercase );
+
+        @media @mobile{
+          width: 100%;
+        }
+      }
     }
   }
 }// home
+
+//header
+header{
+  height: 55vh;
+  border-bottom: 2px dashed @navigation-border;
+  .flexDisplay(column, space-between, flex-start );
+
+  @media @mobile{
+    height: 46vh;
+  }
+
+  @media(max-width: 291px){
+    height:50vh;
+  }
+
+  @media(max-width: 263px){
+    height:53vh;
+  }
+
+  @media(max-width: 244px){
+    height:55vh;
+  }
+
+  @media(max-width: 210px){
+    height:57vh;
+  }
+
+  @media(max-width: 203px){
+    height:60vh;
+  }
+
+  @media(max-width: 181px){
+    height:63vh;
+  }
+
+  @media(max-width: 171px){
+    height:69vh;
+  }
+
+  @media(max-width: 159px){
+    height:73vh;
+  }
+
+  @media(max-width: 152px){
+    height:76vh;
+  }
+  }
+  
+ 
